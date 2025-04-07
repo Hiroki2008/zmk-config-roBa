@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp TAB           &kp W         &kp E  &kp R       &kp T                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D  &kp F       &kp G      &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 2 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C  &kp V       &kp B      &kp COLON          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp Q  &kp DELETE  &kp SPACE  &kp LCTRL          &kp BACKSPACE  &lt 1 ENTER                             &lt 5 ESC
+&kp TAB           &kp W        &kp E  &kp R       &kp T                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S        &kp D  &kp F       &kp G      &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 2 MINUS
+&mt LEFT_SHIFT Z  &kp X        &kp C  &kp V       &kp B      &kp COLON          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LA(SQT)  &kp Q  &kp DELETE  &kp SPACE  &kp LCTRL          &kp BACKSPACE  &lt 1 ENTER                             &lt 5 ESC
             >;
         };
 
@@ -85,9 +85,9 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &trans           &kp UP_ARROW     &trans           &kp PLUS                                                   &kp CARET         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT        &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH
+&kp MINUS                   &trans           &kp UP_ARROW     &trans           &kp PLUS                                                   &kp CARET         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
+&kp SLASH                   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT        &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &kp KP_NUMBER_0                                                      &kp PIPE
             >;
         };
