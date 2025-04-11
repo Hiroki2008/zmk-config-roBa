@@ -69,7 +69,7 @@
             bindings = <
 &mt LEFT_SHIFT TAB  &kp W        &kp E  &kp R       &kp T                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A               &kp S        &kp D  &kp F       &kp G      &kp LC(UP)        &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 2 MINUS
-&lt 1 Z             &kp X        &kp C  &kp V       &kp B      &kp LC(DOWN)      &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&lt 1 Z             &kp X        &kp C  &kp V       &kp B      &kp LC(DOWN)      &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
 &kp LALT            &kp LA(SQT)  &kp Q  &kp DELETE  &kp SPACE  &kp LCTRL         &kp BACKSPACE  &lt 1 ENTER                             &lt 5 ESC
             >;
         };
