@@ -114,10 +114,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &kp LC(W)  &trans     &trans     &trans    &kp LC(LS(T))
-&trans  &trans  &trans  &trans  &trans  &kp DQT        &trans  &trans     &mkp MB4   &mkp MB3   &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &kp COLON      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans                                     &trans
+&trans  &trans  &trans  &trans  &trans                             &kp LC(W)  &trans     &trans     &trans    &kp LC(LS(T))
+&trans  &trans  &trans  &trans  &trans  &kp SQT            &trans  &trans     &mkp MB4   &mkp MB3   &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &kp SEMICOLON      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans                                     &trans
             >;
         };
 
