@@ -147,7 +147,7 @@
 
         SHIFT_NUM {
             bindings = <
-&trans  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                      &kp CARET  &kp AMPS  &trans  &trans  &kp INT_YEN
+&trans  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                      &kp CARET  &kp AMPS  &trans  &trans  &kp JP_YEN
 &trans  &trans  &trans    &trans    &trans     &trans      &trans  &trans     &trans    &trans  &trans  &kp LS(LG(S))
 &trans  &trans  &trans    &trans    &trans     &trans      &trans  &trans     &trans    &trans  &trans  &kp UNDERSCORE
 &trans  &trans  &trans    &trans    &trans     &trans      &trans  &trans                               &trans
