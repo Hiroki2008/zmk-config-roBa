@@ -22,7 +22,7 @@
 #define JP_COLON        SINGLE_QUOTE      // :
 #define JP_ASTERISK     DOUBLE_QUOTES     // *
 #define JP_BACKQUOTE    LEFT_BRACE        // `
-#define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_UNDERBAR     LS(0x87)          // _
 #define JP_LBRACKET     RIGHT_BRACKET     // [
 #define JP_RBRACKET     BACKSLASH         // ]
 #define JP_LPAREN       ASTERISK          // (
@@ -151,7 +151,7 @@
             bindings = <
 &trans  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                      &kp CARET  &kp AMPS  &trans  &trans  &kp JP_YEN
 &trans  &trans  &trans    &trans    &trans     &trans      &trans  &trans     &trans    &trans  &trans  &kp LS(LG(S))
-&trans  &trans  &trans    &trans    &trans     &trans      &trans  &trans     &trans    &trans  &trans  &kp RS(MINUS)
+&trans  &trans  &trans    &trans    &trans     &trans      &trans  &trans     &trans    &trans  &trans  &kp JP_UNDERBAR
 &trans  &trans  &trans    &trans    &trans     &trans      &trans  &trans                               &trans
             >;
         };
