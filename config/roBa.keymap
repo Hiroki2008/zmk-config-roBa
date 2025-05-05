@@ -53,7 +53,7 @@
         };
 
         muhennkann {
-            bindings = <&bt0_win INT_MUHENKAN>;
+            bindings = <&bt0win INT_MUHENKAN>;
             key-positions = <11 10>;
         };
 
@@ -69,7 +69,7 @@
     };
 
     macros {
-        bt0_win: to_layer_0 {
+        bt0win: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -82,7 +82,7 @@
             label = "TO_LAYER_0";
         };
 
-        bt4_mac: new_macro {
+        bt4mac: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -94,7 +94,7 @@
             label = "NEW_MACRO";
         };
 
-        bt3_iPad: new_macro {
+        bt3ipad: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -112,7 +112,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&bt0_win>;
+            bindings = <&mo>, <&bt0win>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -227,7 +227,7 @@
 
         BT {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &bt0_win      &bt BT_SEL 1  &bt BT_SEL 2  &bt3_iPad     &bt4_mac
+&trans  &trans  &trans  &trans  &trans                          &bt0win       &bt BT_SEL 1  &bt BT_SEL 2  &bt3ipad      &bt4mac
 &trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans        &bt BT_SEL 4  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans                                                  &trans
