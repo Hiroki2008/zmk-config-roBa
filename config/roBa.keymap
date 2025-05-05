@@ -53,7 +53,7 @@
         };
 
         muhennkann {
-            bindings = <&bt0win INT_MUHENKAN>;
+            bindings = <&bt0 INT_MUHENKAN>;
             key-positions = <11 10>;
         };
 
@@ -69,7 +69,7 @@
     };
 
     macros {
-        bt0win: bt0win {
+        bt0: bt0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -79,10 +79,10 @@
                 <&macro_wait_time 500>,
                 <&tog_on 1>;
 
-            label = "bt0win";
+            label = "BT0";
         };
 
-        bt4mac: bt4mac {
+        bt4: bt4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -91,10 +91,10 @@
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>;
 
-            label = "bt4mac";
+            label = "BT4";
         };
 
-        bt3ipad: bt3ipad {
+        bt3: bt3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -104,7 +104,7 @@
                 <&macro_wait_time 500>,
                 <&tog_on 2>;
 
-            label = "bt3ipad";
+            label = "BT3";
         };
     };
 
@@ -112,7 +112,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&bt0win>;
+            bindings = <&mo>, <&bt0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -227,7 +227,7 @@
 
         BT {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &bt0win       &bt BT_SEL 1  &bt BT_SEL 2  &bt3ipad      &bt4mac
+&trans  &trans  &trans  &trans  &trans                          &bt0          &bt BT_SEL 1  &bt BT_SEL 2  &bt3          &bt4
 &trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans        &bt BT_SEL 4  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans                                                  &trans
