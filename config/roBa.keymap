@@ -3,9 +3,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define MOUSE 5
-#define SCROLL 6
-#define NUM 4
+#define MOUSE 4
+#define SCROLL 5
+#define NUM 6
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
@@ -160,7 +160,7 @@
         default_layer {
             bindings = <
 &mt LEFT_SHIFT TAB  &kp W            &kp E               &kp R       &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A               &kp S            &kp D               &kp F       &kp G      &kp LC(UP)            &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
+&kp A               &kp S            &kp D               &kp F       &kp G      &kp LC(UP)            &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 3 MINUS
 &lt 8 Z             &kp X            &kp C               &kp V       &kp B      &kp LC(DOWN)          &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 9 SLASH
 &kp LALT            &lt 7 LC(SPACE)  &mt LEFT_CONTROL Q  &kp DELETE  &kp SPACE  &kp LEFT_COMMAND      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESC
             >;
@@ -169,7 +169,7 @@
         win_layer {
             bindings = <
 &mt LEFT_SHIFT TAB  &kp W            &kp E           &kp R       &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A               &kp S            &kp D           &kp F       &kp G      &kp LG(TAB)       &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 3 MINUS
+&kp A               &kp S            &kp D           &kp F       &kp G      &kp LG(TAB)       &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 7 MINUS
 &lt 8 Z             &kp X            &kp C           &kp V       &kp B      &kp LC(DOWN)      &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 9 SLASH
 &kp LALT            &lt 7 JP_HANZEN  &mt LEFT_WIN Q  &kp DELETE  &kp SPACE  &kp LCTRL         &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESC
             >;
@@ -181,15 +181,6 @@
 &kp A               &kp S            &kp D           &kp F       &kp G      &kp LC(UP)        &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 3 MINUS
 &lt 8 Z             &kp X            &kp C           &kp V       &kp B      &kp LC(DOWN)      &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 9 SLASH
 &kp LALT            &lt 7 JP_HANZEN  &mt LEFT_WIN Q  &kp DELETE  &kp SPACE  &kp LCTRL         &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESC
-            >;
-        };
-
-        NUM_ARROW {
-            bindings = <
-&trans            &trans          &kp UP_ARROW    &kp EXCL   &kp QMARK                      &kp EQUAL          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
-&kp LEFT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp DQT    &trans      &trans  &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
-&trans            &trans          &trans          &trans     &kp COLON  &trans      &trans  &kp BSLH           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH
-&trans            &trans          &trans          &trans     &trans     &trans      &trans  &kp KP_NUMBER_0
             >;
         };
 
@@ -217,6 +208,15 @@
 &trans  &trans  &trans  &trans  &trans  &kp SQT            &trans  &trans     &mkp MB4   &mkp MB3   &mkp MB5  &trans
 &trans  &trans  &trans  &trans  &trans  &kp SEMICOLON      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans                                     &trans
+            >;
+        };
+
+        NUM_ARROW {
+            bindings = <
+&trans            &trans          &kp UP_ARROW    &kp EXCL   &kp QMARK                      &kp EQUAL          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
+&kp LEFT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp DQT    &trans      &trans  &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+&trans            &trans          &trans          &trans     &kp COLON  &trans      &trans  &kp BSLH           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH
+&trans            &trans          &trans          &trans     &trans     &trans      &trans  &kp KP_NUMBER_0
             >;
         };
 
