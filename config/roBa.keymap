@@ -231,10 +231,10 @@
 
         SHIFT_NUMMAC {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                      &kp CARET         &kp AMPS  &trans  &trans  &kp JP_YEN
+&trans  &trans  &trans    &trans    &trans     &trans      &trans  &kp LESS_THAN     &trans    &trans  &trans  &kp LS(LG(S))
+&trans  &trans  &trans    &trans    &trans     &trans      &trans  &kp GREATER_THAN  &trans    &trans  &trans  &kp JP_UNDERBAR
+&trans  &trans  &trans    &trans    &trans     &trans      &trans  &trans                                      &trans
             >;
         };
 
