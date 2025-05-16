@@ -231,9 +231,9 @@
 
         SHIFT_NUMMAC {
             bindings = <
-&trans  &kp DQT  &kp HASH  &kp DLLR  &kp PRCNT                      &kp AMPS          &kp SQT  &trans  &trans  &kp JP_YEN
+&trans  &kp DQT  &kp HASH  &kp DLLR  &kp PRCNT                      &kp AMPS          &kp SQT  &trans  &trans  &kp INT_YEN
 &trans  &trans   &trans    &trans    &trans     &trans      &trans  &kp LESS_THAN     &trans   &trans  &trans  &kp LS(LG(S))
-&trans  &trans   &trans    &trans    &trans     &trans      &trans  &kp GREATER_THAN  &trans   &trans  &trans  &kp JP_UNDERBAR
+&trans  &trans   &trans    &trans    &trans     &trans      &trans  &kp GREATER_THAN  &trans   &trans  &trans  &kp UNDER
 &trans  &trans   &trans    &trans    &trans     &trans      &trans  &trans                                     &trans
             >;
         };
