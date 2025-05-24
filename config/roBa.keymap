@@ -191,8 +191,8 @@
         ipad_layer {
             bindings = <
 &mt LEFT_SHIFT TAB  &kp W            &kp E               &kp R       &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A               &kp S            &kp D               &kp F       &kp G      &kp LC(UP)            &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
-&lt 10 Z            &kp X            &kp C               &kp V       &kp B      &kp LC(DOWN)          &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 11 SLASH
+&kp A               &kp S            &kp D               &kp F       &kp G      &kp GLOBE             &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
+&lt 10 Z            &kp X            &kp C               &kp V       &kp B      &kp GLOBE             &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 11 SLASH
 &kp LALT            &lt 8 LC(SPACE)  &mt LEFT_CONTROL Q  &kp DELETE  &kp SPACE  &kp LEFT_COMMAND      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESC
             >;
         };
