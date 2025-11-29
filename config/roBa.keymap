@@ -69,6 +69,7 @@
     };
 
     macros {
+        // Windows用
         bt0: bt0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -81,6 +82,7 @@
             label = "BT0";
         };
 
+        // Mac用
         bt4: bt4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -94,6 +96,7 @@
             label = "BT4";
         };
 
+        // iPad or iPhone用
         bt3: bt3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -107,6 +110,7 @@
             label = "BT3";
         };
 
+        // Mac用
         bt2: bt2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -115,11 +119,12 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 2>;
+                <&tog_on 1>;
 
             label = "BT2";
         };
 
+        // Windows用
         bt1: bt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
