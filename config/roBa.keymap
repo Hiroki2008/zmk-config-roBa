@@ -277,10 +277,10 @@
 
         BT {
             bindings = <
-&kp LS(TAB)  &trans         &trans  &trans  &trans                              &bt0    &bt1            &bt2            &bt3       &bt4
-&trans       &trans         &trans  &trans  &trans  &trans      &bt BT_CLR      &trans  &trans          &kp UP_ARROW    &trans     &trans
-&trans       &trans         &trans  &trans  &trans  &trans      &bt BT_CLR_ALL  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
-&trans       &kp LS(LG(S))  &trans  &trans  &trans  &trans      &trans          &trans                                             &trans
+&kp LS(TAB)  &trans  &trans  &trans  &trans                              &bt0    &bt1            &bt2            &bt3       &bt4
+&trans       &trans  &trans  &trans  &trans  &trans      &bt BT_CLR      &trans  &trans          &kp UP_ARROW    &trans     &trans
+&trans       &trans  &trans  &trans  &trans  &trans      &bt BT_CLR_ALL  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
+&trans       &trans  &trans  &trans  &trans  &trans      &trans          &trans                                             &trans
             >;
         };
     };
