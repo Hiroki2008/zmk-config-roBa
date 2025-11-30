@@ -70,6 +70,7 @@
 
     macros {
         // Windows用
+
         bt0: bt0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -77,12 +78,11 @@
                 <&tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
-                <&macro_wait_time 500>,
-
-            label = "BT0";
+                <&macro_wait_time 500>;
         };
 
         // Mac用
+
         bt4: bt4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -91,12 +91,14 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 4>,
                 <&macro_wait_time 500>;
-                <&tog_on 1>;
+
+            <&tog_on 1>;
 
             label = "BT4";
         };
 
         // iPad or iPhone用
+
         bt3: bt3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -111,6 +113,7 @@
         };
 
         // Mac用
+
         bt2: bt2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -125,6 +128,7 @@
         };
 
         // Windows用
+
         bt1: bt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -132,9 +136,7 @@
                 <&tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
-                <&macro_wait_time 500>,
-
-            label = "BT1";
+                <&macro_wait_time 500>;
         };
     };
 
@@ -174,7 +176,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-default_layer {
+        default_layer {
             bindings = <
 &mt LEFT_SHIFT TAB  &kp W            &kp E           &kp R       &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A               &kp S            &kp D           &kp F       &kp G      &kp LG(TAB)       &kp HOME       &kp H        &kp J  &kp K      &kp L    &lt 3 MINUS
@@ -275,10 +277,10 @@ default_layer {
 
         BT {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                              &bt0    &bt1            &bt2            &bt3       &bt4
-&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR      &trans  &trans          &kp UP_ARROW    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR_ALL  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans          &trans                                             &trans
+&kp LS(TAB)  &trans         &trans  &trans  &trans                              &bt0    &bt1            &bt2            &bt3       &bt4
+&trans       &trans         &trans  &trans  &trans  &trans      &bt BT_CLR      &trans  &trans          &kp UP_ARROW    &trans     &trans
+&trans       &trans         &trans  &trans  &trans  &trans      &bt BT_CLR_ALL  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
+&trans       &kp LS(LG(S))  &trans  &trans  &trans  &trans      &trans          &trans                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
