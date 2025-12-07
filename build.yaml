@@ -25,3 +25,9 @@ include:
    shield: roBa_L
  - board: seeeduino_xiao_ble
    shield: settings_reset
+
+manifest:
+  projects:
+    - name: zmk-pmw3610-driver-main
+      path: zmk-pmw3610-driver-main
+      revision: main
